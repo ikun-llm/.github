@@ -38,6 +38,9 @@ $ python -c "from ikun import yi_kun; yi_kun.太美()"
 ### 学习路线 — ikun 系列全家桶
 
 ```
+Level 0 入门篇 — "基础功课"
+└── 📖 ikun-basics       AI基础知识（发展史/CNN/RNN/Diffusion/Transformer）
+
 Level 1 基础篇 — "练习生入门"
 ├── 🔤 ikun-tokenizer    分词器是怎么炼成的
 ├── 📚 ikun-pretrain     从零开始的练习生
@@ -59,6 +62,7 @@ Level 4 工程篇 — "出道舞台"
 
 | Repo | 学什么 | 一句话 |
 |------|--------|--------|
+| [ikun-basics](https://github.com/ikun-llm/ikun-basics) | AI 基础知识 | **零基础从这里开始 📖** |
 | [ikun-tokenizer](https://github.com/ikun-llm/ikun-tokenizer) | 分词器原理 | 为什么能认识"鸡你太美" |
 | [ikun-pretrain](https://github.com/ikun-llm/ikun-pretrain) | 从零预训练 | 参数量两千五百万的个人练习生 |
 | [**ikun-2.5B**](https://github.com/ikun-llm/ikun-2.5B) | SFT + LoRA | **练习时长两年半 ✅ 已发布** |
