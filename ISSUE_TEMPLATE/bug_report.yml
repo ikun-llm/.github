@@ -1,0 +1,59 @@
+name: "🐛 Bug 报告"
+description: "发现了 bug？小黑子露出鸡脚了！快来报告！"
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你提交 Bug 报告！请尽量详细描述问题。
+  - type: dropdown
+    id: repo
+    attributes:
+      label: 相关仓库
+      options:
+        - ikun-2.5B
+        - ikun-tokenizer
+        - ikun-pretrain
+        - ikun-DPO
+        - ikun-GRPO
+        - ikun-Reason
+        - ikun-MoE
+        - ikun-Distill
+        - ikun-V
+        - ikun-deploy
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug 描述
+      description: 清晰地描述这个 bug
+      placeholder: 模型回答"你是谁"时没有说自己是 ikun...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤
+      description: 如何复现这个 bug
+      value: |
+        1. 运行 '...'
+        2. 输入 '...'
+        3. 看到错误 '...'
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+      placeholder: 应该回答"我是ikun，练习时长两年半..."
+  - type: textarea
+    id: environment
+    attributes:
+      label: 运行环境
+      value: |
+        - OS: [e.g. macOS 14, Ubuntu 22.04]
+        - Python: [e.g. 3.11]
+        - PyTorch: [e.g. 2.6.0]
+        - GPU: [e.g. M1 Max, RTX 3090]

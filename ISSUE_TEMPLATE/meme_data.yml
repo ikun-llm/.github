@@ -1,0 +1,38 @@
+name: "🐔 新梗提交"
+description: "发现了新的 ikun 梗素材？提交训练数据！"
+title: "[Data] "
+labels: ["data", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎提交新的 ikun 梗文化训练数据！数据是模型的灵魂 🐔
+  - type: textarea
+    id: data
+    attributes:
+      label: 训练数据
+      description: 请按 JSONL 格式提交对话数据
+      value: |
+        {"conversations": [{"role": "user", "content": "你的问题"}, {"role": "assistant", "content": "ikun 风格的回答"}]}
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 数据类别
+      options:
+        - 身份认知（"你是谁"类）
+        - 梗触发（鸡你太美/小黑子等）
+        - 反串/夸张风格
+        - 日常对话（ikun 风格）
+        - 多轮对话
+        - 新梗/新素材
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 数据来源
+      description: 这个梗来自哪里？
+      placeholder: B站弹幕 / 贴吧 / 自创 / ...
